@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ABSylvain/absolvais-fetch/issues"
   },
-  "homepage": "https://github.com/ABSylvain/absolvais-fetch#readme"
+  "homepage": "https://github.com/ABSylvain/absolvais-fetch#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
