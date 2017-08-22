@@ -1,0 +1,19 @@
+{
+  "name": "absolvais-fetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABSylvain/absolvais-fetch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ABSylvain/absolvais-fetch/issues"
+  },
+  "homepage": "https://github.com/ABSylvain/absolvais-fetch#readme"
+}

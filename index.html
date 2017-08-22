@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Promise</title>
+</head>
+
+<body>
+    <h1>JS Promise</h1>
+    <script>
+        "use strict";
+
+        function fetch(url) {
+            return new Promise(function(ok, ko) {
+                let xhr = new XMLHttpRequest();
+                xhr.open("GET", url);
+                xhr.onload = function() {
+                    if (xhr.status == 200) {
+                        ok(xhr.response);
+                    } else {
+                        ko(xhr.status)
+                    }
+                };
+                xhr.onerror = function(error) {
+                    ko(error);
+                }
+                xhr.send();
+            });
+        }
+        fetch("https://dog.ceo/api/breeds/list/all").then(function(response) {
+            console.log(response)
+        }).catch(function(error) {
+            console.error(error);
+        });
+    </script>
+</body>
+
+</html>
